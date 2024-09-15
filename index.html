@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="display" id="result"></div>
+        <div class="button-row">
+          <button class="btn-clear" onclick="result.innerText = ''">AC</button>
+          <button class="btn-delete" onclick="removeLastChar()">DE</button>
+          <button class="btn-operator" id="btn-decimal">.</button>
+          <button class="btn-operator" id="btn-division">/</button>
+        </div>
+
+        <div class="button-row">
+          <button class="btn-number" id="btn-seven">7</button>
+          <button class="btn-number" id="btn-eight">8</button>
+          <button class="btn-number" id="btn-nine">9</button>
+          <button class="btn-operator" id="btn-multiply">*</button>
+        </div>
+
+        <div class="button-row">
+          <button class="btn-number" id="btn-four">4</button>
+          <button class="btn-number" id="btn-five">5</button>
+          <button class="btn-number" id="btn-six">6</button>
+          <button class="btn-operator" id="btn-subtract">-</button>
+        </div>
+
+        <div class="button-row">
+          <button class="btn-number" id="btn-one">1</button>
+          <button class="btn-number" id="btn-two">2</button>
+          <button class="btn-number" id="btn-three">3</button>
+          <button class="btn-operator" id="btn-add">+</button>
+        </div>
+
+        <div class="button-row">
+          <button class="btn-number" id="btn-double-zero">00</button>
+          <button class="btn-number" id="btn-zero">0</button>
+          <button class="btn-equals" id="btn-equals">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
